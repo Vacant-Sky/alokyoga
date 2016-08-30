@@ -1,0 +1,162 @@
+
+
+
+.popUp:hover{
+    width: 100px;
+   height:100px;
+}
+body{
+   
+}
+.logo {
+	text-align: center;
+}
+.tagline {
+	color: #602F8D;
+	font-family: Georgia, serif;
+	
+	font-size: 10px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+
+
+.siteinfo {
+	text-align: center;
+	padding: 3em 0;
+	border-top: 1px solid #ddd;
+}
+.siteinfo a {
+	text-decoration: none;
+	
+	font-size: 0.8em;
+}
+.siteinfo a:hover {
+	color: #602F8D;
+	text-decoration: underline;
+}
+
+
+
+.btn-primary { 
+    background-color: #602F8D; 
+    border-color: #602F8D; 
+}  
+.btn-primary:hover, 
+.btn-primary:focus,  
+.btn-primary:active { 
+    background-color: #53297A; 
+} 
+.modal-body .pull-left { 
+    padding-right: 1em; 
+} 
+.modal-body .pull-right { 
+    padding-left: 1em; 
+} 
+.modal-footer { 
+    clear: both; 
+} 
+
+
+
+.panel-primary .panel-heading {
+	background-color:#E06B48;
+	border-color: #E06B48;
+}
+.panel {
+	border-color: #E06B48;
+    margin-right: -30px;
+    padding-bottom: 15px;
+    margin-left: -14px;
+}
+
+
+.form-group button {
+	margin-top: 10px;
+}
+
+form .col-sm-2,
+form .col-sm-10 {
+	padding: 10px 0;
+	margin: 0;
+}
+
+@media (min-width: 768px) {  
+	.logo {
+		text-align: left;
+	}
+	.tagline {
+		font-size: 2em;
+		text-align: right;
+		padding-top: 1.6em;
+	}
+	form {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+}
+
+@media(max-width: 768px){
+    .img-responsive{
+        max-width: 50%;
+        min-width: 200px;
+    }
+}
+
+
+@media(max-width: 768px){
+    .img-responsive{
+        max-width: 50%;
+        min-width: 200px;
+    }
+}
+
+@media(max-width: 768px){
+    #banner{
+        background-image: none;
+    }
+}
+
+@media(max-width: 768px){
+    .line{
+        display: none;
+    }
+    
+    .panel{
+        margin-right: -14px;
+    }
+    
+    #aboutus{
+        margin-left:20px;
+       
+       
+    }
+    
+    .carousel-inner{
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 768px){
+    .img-circle{
+        margin-left: 10px;
+        margin-bottom: -40px;
+    }
+    #tag1 {
+        margin-top: 100px;
+    }
+    .tagline {
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 768px) and (orientation: landscape){
+    .img-circle{
+        margin-left: 150px;
+        margin-bottom: -40px;
+    }
+}
