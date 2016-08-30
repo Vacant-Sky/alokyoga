@@ -9,22 +9,34 @@
    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Risque|Signika" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
+    <style>
+    .caret {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+       .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+          background-color:#602F8D; 
+       }
     
+       .navbar-default .navbar-nav>li>a:hover{
+           background-color: #602F8D;
+       }
+    </style>
 </head>
 
 
 <body>
-      <div style=" background-image: url(../images/kk.png);background-size: cover;">
+      <div style=" background-image: url(../images/dd.jpg);background-size: cover;">
 	<div class="container">
-		<div class="container" >
-		<header class="row" style="background-color: white;padding-bottom: 10px;width: 1160px">
-            <div class="col-sm-3 logo" style="color: #602F8D;font-size:30px;margin-top:20px "><img src="images/yoga copy.png" style="height: 80px" alt="logo"><span style="font-size: 40px;font-family: 'Indie Flower', cursive;">&nbspAlokYoga</span></div>
-            <div class="col-sm-9 tagline"><img style="height: 40px" src="images/phone2.PNG">&nbsp<span style="font-style:normal;font-size: 20px">Get in touch - 9999999994 | <a style="color: #602F8D;text-decoration: none" href="https://www.urbanclap.com/pro/j-rkumar2011" target="_blank">Contact through UrbanClap</a></span><br><span id="tag1" style="font-size: 18px;font-style:italic;font-family: 'Indie Flower', cursive;">Yoga is a way for nourishing and blossoming the divinity within you</span></div>
+		<header class="row" style="background-color: white;padding-bottom: 10px;">
+            <div class="col-sm-3 logo" style="color: #E06B48;font-size:30px;margin-top:20px "><img src="images/yoga copy.png" style="height: 80px" alt="logo"><span style="font-size: 40px;font-family: 'Indie Flower', cursive;">&nbspAlokYoga</span></div>
+            <div class="col-sm-9 tagline"><img style="height: 40px" src="images/phone2.PNG">&nbsp&nbsp<span style="font-style:normal;font-size: 20px;color: #E06B48">Get in touch - 9999999994 | <a style="color: #E06B48;text-decoration: none" href="https://www.urbanclap.com/pro/j-rkumar2011" target="_blank">Contact through UrbanClap</a></span><br><span id="tag1" style="font-size: 18px;font-style:italic;font-family: 'Indie Flower', cursive;color: #E06B48">Yoga is a way for nourishing and blossoming the divinity within you</span></div>
 		</header>
 		<div class="row">
-			<nav class="navbar navbar-default" role="navigation" style="background-color:#602F8D;color: white;border: none;width: 1160px ">
+			<nav class="navbar navbar-default" role="navigation" style="background-color:#E06B48;color: white;border: none; ">
 			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
+			    
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
 			        <span class="sr-only">Toggle navigation</span>
@@ -34,17 +46,30 @@
 			      </button>
 			    </div>
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="navbar" style="background-color:#602F8D;color: white;border:none ">
-			      <ul class="nav navbar-nav" style="background-color:#602F8D;color:white ">
-			        <li style="color: white"><a style="color:white" href="index.html"><img src="images/11.png">&nbspHOME</a></li>
-			        <li><a href="" style="color: white"><img src="images/yoga7">&nbspCLASSES</a></li>
-			        <li class="active"><a href="contact.html"><img src="images/yoga7.png">&nbspCONTACT</a></li>
+			   
+			    <div class="collapse navbar-collapse" id="navbar" style="background-color:#E06B48;color: white;border:none ">
+			      <ul class="nav navbar-nav" style="background-color:#E06B48">
+			        <li style="color: white"><a style="color: white" href="index.html"><img src="images/11.png">&nbspHOME</a></li>
+			        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white"><img src="images/yoga73.png" style="height:35px">&nbspCLASSES<b class="caret"></b></a>
+                        
+                        <ul class="dropdown-menu">
+                           <li style="color: white"><a href="#">Classes Info</a></li>
+                           <li style="color: white"><a href="#">What we teach</a></li>
+                           <li style="color: white"><a href="#">Class Schedule</a></li>
+                           <li style="color: white"><a href="#">Group Classes</a></li>
+                           <li style="color: white"><a href="#">Private Classes</a></li>
+                         </ul>
+                      
+                      
+                      
+                     </li>
+			        <li><a style="color: white" href="contact.html"><img src="images/yoga7.png">&nbspCONTACT</a></li>
 			      </ul>
 			    </div><!-- end navbar-collapse -->
 			  </div><!-- end container-fluid -->
 			</nav>
 		</div>
+		
 		<div class="row">
 			<h2>Contact Us</h2>
 			<form action="MAILTO:shivanisnarang@gmail.com" method="post" enctype="text/plain">
@@ -129,14 +154,14 @@
 			        </div>
                     <br><br>
 			        <div class="form-group">
-		          		<button type="submit" class="btn btn-primary">Submit</button>
+		          		<button style="padding-left: 40px; padding-right: 40px" type="submit" class="btn btn-primary">Submit</button>
 		      		</div>
 		        </fieldset>
 		    </form>
 
 		</div>
 		<footer class="row siteinfo">
-			<a href="">Yoga is the best way to lead a balanced stress free life.</a>
+			<p style="color: #602F8D">Yoga is the best way to lead a balanced stress free life.</p>
 		</footer>
 	</div><!-- end container -->
           </div>
@@ -147,6 +172,16 @@
     <script>
     	$("textarea").tooltip();
     	$(".form-group.collapse").collapse();
+        
+          
+        $(function(){
+    $('.dropdown').hover(function() {
+        $(this).addClass('open');
+    },
+    function() {
+        $(this).removeClass('open');
+    });
+});
     </script>
 
 </body>

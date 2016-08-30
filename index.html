@@ -11,7 +11,20 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-   
+   <style>
+    .caret {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+}
+       .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+          background-color:#602F8D; 
+       }
+    
+       .navbar-default .navbar-nav>li>a:hover{
+           background-color: #602F8D;
+       }
+    </style>
 </head>
 
 <body>
@@ -26,7 +39,7 @@
 		<div class="row">
 			<nav class="navbar navbar-default" role="navigation" style="background-color:#E06B48;color: white;border: none; ">
 			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
+			    
 			    <div class="navbar-header">
 			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
 			        <span class="sr-only">Toggle navigation</span>
@@ -36,11 +49,23 @@
 			      </button>
 			    </div>
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
+			   
 			    <div class="collapse navbar-collapse" id="navbar" style="background-color:#E06B48;color: white;border:none ">
-			      <ul class="nav navbar-nav" style="background-color:#E06B48;color:white ">
-			        <li style="color: white" class="active"><a href="index.html"><img src="images/11.png">&nbspHOME</a></li>
-			        <li><a href="" style="color: white"><img src="images/yoga73.png" style="height:35px">&nbspCLASSES</a></li>
+			      <ul class="nav navbar-nav" style="background-color:#E06B48">
+			        <li style="color: white"><a style="color: white" href="index.html"><img src="images/11.png">&nbspHOME</a></li>
+			        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white"><img src="images/yoga73.png" style="height:35px">&nbspCLASSES<b class="caret"></b></a>
+                        
+                        <ul class="dropdown-menu">
+                           <li style="color: white"><a href="#">Classes Info</a></li>
+                           <li style="color: white"><a href="#">What we teach</a></li>
+                           <li style="color: white"><a href="#">Class Schedule</a></li>
+                           <li style="color: white"><a href="#">Group Classes</a></li>
+                           <li style="color: white"><a href="#">Private Classes</a></li>
+                         </ul>
+                      
+                      
+                      
+                     </li>
 			        <li><a style="color: white" href="contact.html"><img src="images/yoga7.png">&nbspCONTACT</a></li>
 			      </ul>
 			    </div><!-- end navbar-collapse -->
@@ -275,6 +300,15 @@
     		interval: 2000,
     		wrap: true
     	});
+        
+        $(function(){
+    $('.dropdown').hover(function() {
+        $(this).addClass('open');
+    },
+    function() {
+        $(this).removeClass('open');
+    });
+});
     </script>
 </body>
 </html>
