@@ -156,7 +156,7 @@ form .col-sm-10 {
 
 @media(max-width: 768px) and (orientation: landscape){
     .img-circle{
-        margin-left: 150px;
+        margin-left: 120px;
         margin-bottom: -40px;
     }
 }
